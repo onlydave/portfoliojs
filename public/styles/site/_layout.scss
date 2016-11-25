@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300);
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#header {
+	margin-top: 30px;
+}
+
+#footer {
+	margin-top: 30px;
+	border-top: 1px solid #eeeeee;
+	padding-top: 30px;
+	color: #777777;
+}
+
+.gallery-image .headline{
+  font-family: Lato;
+  font-weight: lighter;
+  font-size: 14px;
+  margin: -15px 3px 20px;
+  display: block;
+}
+
+.gallery-image img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnail {
+  border: none;
+}
+
+.container,
+.container-fluid {
+  padding: 0;
+}
+
+.container-fluid .navbar-brand {
+  padding: 15px 0;
+  margin: 0 !important;
+  font-size: 29px;
+  font-weight: 400;
+}
+
+.row {
+  margin: 0;
+}
+
+a {
+  color: #333;
+}
+
+.nav > li > a {
+  font-size: 19px;
+}
+
+#footer {
+  display: none;
+}
+
+#body h1 {
+  font-size: 48px;
+  line-height: 1.2em;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#body p {
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0 0 55px;
+  line-height: 1.5em;
+  hyphens:auto;
+  max-width:570px;
+}
+
+@media screen and (max-width: 750px) {
+  .container-fluid .navbar-brand {
+    margin: 0 15px !important;
+  }
+  body {
+    padding: 0 10px;
+  } 
+}
+
+.navbar-toggle .icon-bar {
+  background-color: $brand-primary;
+}

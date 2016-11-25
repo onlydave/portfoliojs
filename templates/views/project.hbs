@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>
+    {{name}}
+  </h1>
+  <p>
+    {{description}}
+  </p>
+	{{#each images}}
+	<div class="row">
+		<img src="{{cloudinaryUrl width='2000'}}" sizes="100vw" srcset="{{cloudinaryUrl width='1000'}} 1000w, {{cloudinaryUrl width='600'}} 600w, {{cloudinaryUrl width='400'}} 400w, {{cloudinaryUrl width='200'}} 200w" class="img-responsive" style="padding-bottom: 10px">
+	</div>
+	{{/each}}
+</div>
