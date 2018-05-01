@@ -35,7 +35,8 @@ keystone.init({
 	'session': true,
 	'auth': true,
 	'user model': 'Y',
-  'port': 57111
+  'port': 57111,
+  'mongo': process.env.MONGO_URI,
 });
 
 // Load your project's Models
@@ -84,8 +85,8 @@ keystone.set('email locals', {
 
 // Switch Keystone Email defaults to handlebars
 
-keystone.Email.defaults.templateExt = 'hbs';
-keystone.Email.defaults.templateEngine = require('handlebars');
+//keystone.Email.defaults.templateExt = 'hbs';
+//keystone.Email.defaults.templateEngine = require('handlebars');
 
 
 // Configure the navigation bar in Keystone's Admin UI
@@ -96,9 +97,6 @@ keystone.set('nav', {
 	enquiries: 'enquiries',
 	ys: 'ys',
 });
-
-keystone.set('cloudinary config', { cloud_name: 'djeszoxvg', api_key: '272143511257561', api_secret: 'qhWiyi_9kdL3SqSCjf8XkaltC9Q' });
-
 
 // Start Keystone to connect to your database and initialise the web server
 
